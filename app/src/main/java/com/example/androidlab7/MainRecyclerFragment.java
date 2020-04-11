@@ -1,4 +1,4 @@
-package com.example.androidlab6;
+package com.example.androidlab7;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;

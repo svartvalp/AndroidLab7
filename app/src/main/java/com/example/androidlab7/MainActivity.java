@@ -1,6 +1,5 @@
-package com.example.androidlab6;
+package com.example.androidlab7;
 
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentActivity;
 import androidx.fragment.app.FragmentTransaction;
 

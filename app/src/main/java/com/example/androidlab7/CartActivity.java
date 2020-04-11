@@ -1,4 +1,4 @@
-package com.example.androidlab6;
+package com.example.androidlab7;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -21,8 +21,7 @@ public class CartActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ItemService.getInstance().performPurchase(Cart.getInstance());
-                Cart.getInstance().clearCart();
+                ItemService.getInstance().performPurchase(getApplicationContext());
                 finish();
             }
         });

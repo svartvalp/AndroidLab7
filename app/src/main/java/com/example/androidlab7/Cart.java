@@ -1,7 +1,6 @@
-package com.example.androidlab6;
+package com.example.androidlab7;
 
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 class Cart {
