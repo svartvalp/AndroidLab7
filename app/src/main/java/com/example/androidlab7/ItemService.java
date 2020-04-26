@@ -123,6 +123,7 @@ class ItemService {
                                 items.set(items.indexOf(item), updatedItem);
                             }
                         }
+                        Cart.getInstance().updateItem(updatedItem);
                     }
                     isLocked = false;
                 } catch (InterruptedException e) {

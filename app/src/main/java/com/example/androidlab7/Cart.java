@@ -38,6 +38,20 @@ class Cart {
         }
     }
 
+    public void updateItem(Item updatedItem) {
+        for(Item item : items.keySet()) {
+            if(item.getId() == updatedItem.getId()) {
+                if(items.get(item) > updatedItem.getCount()) {
+                    items.remove(item);
+                } else {
+                    Integer count = items.get(item);
+                    items.remove(item);
+                    items.put(updatedItem, count);
+                }
+            }
+        }
+    }
+
     public void clearCart() {
         items.clear();
     }
